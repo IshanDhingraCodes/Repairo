@@ -1,0 +1,186 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* for vertical navbar */
+
+.vertical-nav{
+    width: 25%;
+    position: fixed;
+    background-color: aquamarine;
+    height: 97%;
+    overflow: auto;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    z-index: 2;
+}
+
+.nav-list{
+    list-style-type: none;
+    overflow: auto;
+}
+
+.list-item a {
+    display: block;
+    color: rgb(41, 73, 62);
+    padding: 10px 4px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid #04AA6D;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    background-color:#87ebc8 ;
+    margin-left: -27px;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+  
+.list-item a:hover:not(.active) {
+    background-color: rgb(0, 255, 170);
+    color: rgb(1, 141, 94);
+}
+
+.nav-line{
+    margin:20px 10px;
+    height: 2px !important;
+}
+
+@media screen and (max-width: 420px){
+    .list-item a{
+        font-size: 10px;
+    }
+}
+
+.header-area{
+    position: fixed;
+    width: 67%;
+}
+
+h1{
+    background: #93e3d9;
+    padding: 20px;
+    border-radius: 50px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    margin-left: 29%;
+    position: absolute;
+    overflow: auto;
+    width: 70%;
+    padding: 5px;
+    z-index: -1000;
+}
+
+.table-area{
+    padding-top: 100px;
+}
+
+
+
+
+/* dash-gallery page css */
+
+.gallery-page{
+    margin-left: 29%;
+    position: absolute;
+    overflow: auto; 
+    padding: 5px;
+    width: 70%;
+    z-index: -1000;
+}
+
+#content{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border: 2px solid #9acabb;
+    background: #b9f3e0;
+}
+.gallery-page form{
+    width: 90%;
+    margin: 20px auto;
+}
+
+
+.gallery-bg{
+    background:url(./Images/gallery-bg.jpg) rgba(0, 0, 0, 0.741);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    background-blend-mode: color;   
+}
+.gallery-header{
+    margin-top: 150px;
+    font-weight: 800 !important;
+    font-size: 50px !important;
+    font-family: 'Ubuntu', sans-serif;
+}
+.image-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+.gallery-image{
+    border-radius: 30px;
+    height: 250px;
+    width: 350px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    transition: .3s linear;
+}
+.gallery-image:hover{
+    scale: 1.1;
+}
+
+
+/* dash-videos css */
+.video-page{
+    margin-left: 29%;
+    position: absolute;
+    overflow: auto; 
+    padding: 5px;
+    width: 70%;
+    z-index: -1000;
+}
+
+.video-page form{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.video-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.gallery-video{
+    border-radius: 30px;
+    height: 250px;
+    width: 350px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    transition: .3s linear;
+}
+.gallery-video:hover{
+    scale: 1.1;
+}
+
+/* justify */
+
+.justify{
+    text-align: justify;
+}
