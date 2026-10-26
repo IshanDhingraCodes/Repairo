@@ -5,3 +5,12 @@ services:
     ports:
       - "8080:80"
     restart: unless-stopped
+    # Security: drop all Linux capabilities, read-only root filesystem
+    security_opt:
+      - no-new-privileges:true
+    # Limit resources to prevent abuse
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+          cpus: "1.0"
