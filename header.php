@@ -1,4 +1,5 @@
 <?php
+// connection.php included for compatibility - no database required
 include 'connection.php';
 ?>
 

@@ -12,19 +12,13 @@ include 'header.php';
 
 <div class="container mt-5">
     <div class="video-container">
-    <?php
-        $q = " select * from videos ";
-        $res = mysqli_query($con, $q);
- 
-        while ($data = mysqli_fetch_assoc($res)) {
-        ?>
-            <video src="./Videos/<?php echo $data['filename']; ?>" controls class="gallery-video"></video>
- 
-        <?php
-        }
-        ?>
+        <video src="./Videos/Untitled video - Made with Clipchamp.mp4" controls class="gallery-video"></video>
+        <video src="./Videos/Untitled video - Made with Clipchamp (1).mp4" controls class="gallery-video"></video>
+        <video src="./Videos/Untitled video - Made with Clipchamp (2).mp4" controls class="gallery-video"></video>
+        <video src="./Videos/Untitled video - Made with Clipchamp (3).mp4" controls class="gallery-video"></video>
+        <video src="./Videos/crysta-lounge.mp4" controls class="gallery-video"></video>
     </div>
 </div>
 <?php
-include 'footer.php'
+include 'footer.php';
 ?>

@@ -1,15 +1,8 @@
 <?php
+// Newsletter subscription - no DB, just show success message
 if(isset($_POST['emailbtn']))
 {
-    $newsemail=$_POST['newsemail'];
-    $q="insert into news(email,curdate) values('$newsemail',now())";
-    if(mysqli_query($con,$q))
-    {
-        echo "<script>alert('Your message is submitted')</script>";
-    }
-    else{
-        echo mysqli_error($con);
-    }
+    echo "<script>alert('Thank you for subscribing to our newsletter!')</script>";
 }
 ?>
 
@@ -24,7 +17,6 @@ if(isset($_POST['emailbtn']))
             <li><a href="index.php"class="btn footer-btn text-light mb-2">Home</a></li>
             <li><a href="who_we_are.php"class="btn footer-btn text-light mb-2">Who we are</a></li>
             <li><a href="what_we_do.php"class="btn footer-btn text-light mb-2">What we do</a></li>
-            <li><a href="login.php"class="btn footer-btn text-light mb-2">Admin Login</a></li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-6 mt-5">

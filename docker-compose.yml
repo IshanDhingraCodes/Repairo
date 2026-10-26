@@ -1,0 +1,7 @@
+services:
+  repairo:
+    build: .
+    container_name: repairo-site
+    ports:
+      - "8080:80"
+    restart: unless-stopped

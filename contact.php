@@ -3,37 +3,17 @@ include 'header.php';
 ?>
 
 <?php
+// Contact form - no DB, just show success message
 if(isset($_POST['contactbtn']))
 {
-    $contactname=$_POST['contactname'];
-    $contactemail=$_POST['contactemail'];
-    $contactphone=$_POST['contactphone'];
-    $contactcarname=$_POST['carname'];
-    $contactmodel=$_POST['model'];
-    $contactmessage=$_POST['contactmessage'];
-    $q="insert into contact(name,email,contact,carname,model,message,curdate) values('$contactname','$contactemail','$contactphone','$contactcarname','$contactmodel','$contactmessage',now())";
-    if(mysqli_query($con,$q))
-    {
-        echo "<script>alert('Your message is submitted')</script>";
-    }
-    else{
-        echo mysqli_error($con);
-    }
+    echo "<script>alert('Thank you! Your message has been submitted successfully.')</script>";
 }
 ?>
 <?php
+// Feedback form - no DB, just show success message
 if(isset($_POST['feedbackbtn']))
 {
-    $feedbackname=$_POST['feedbackname'];
-    $feedbackmessage=$_POST['feedbackmessage'];
-    $q="insert into feedback(name,message,curdate) values('$feedbackname','$feedbackmessage',now())";
-    if(mysqli_query($con,$q))
-    {
-        echo "<script>alert('Your message is submitted')</script>";
-    }
-    else{
-        echo mysqli_error($con);
-    }
+    echo "<script>alert('Thank you for your feedback!')</script>";
 }
 ?>
 

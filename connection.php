@@ -1,3 +1,4 @@
 <?php
-$con=mysqli_connect("localhost","root","","dbrepairo")
+// Database connection removed for portfolio deployment
+// No database required - all content is hardcoded
 ?>

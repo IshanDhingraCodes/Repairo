@@ -1,0 +1,16 @@
+.git
+database
+README.md
+Dockerfile
+docker-compose.yml
+.dockerignore
+login.php
+dashboard.php
+adminheader.php
+admin-style.css
+dash-blogs.php
+dash-contact.php
+dash-feedback.php
+dash-gallery.php
+dash-news.php
+dash-video.php
